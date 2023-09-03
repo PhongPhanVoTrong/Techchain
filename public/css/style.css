@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 1200px;
+    margin: auto;
+}
+
+#container>header {
+    background-color: darkcyan;
+    height: 160px;
+    position: relative;
+}
+
+#container>header>#logo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 100px;
+}
+
+#container>header>#giohang {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#container>nav {
+    background-color: orange;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container>nav>ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.2em;
+}
+
+#container>nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#container>nav>ul>li>a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#container>footer {
+    margin: 20px 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: darkcyan;
+    color: white;
+}
+
+.listsp>h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.listsp #data {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.listsp #data>.sp {
+    border: 1px solid darkcyan;
+    text-align: center;
+    padding: 10px;
+}
+
+.listsp #data>.sp>h3 {
+    color: darkblue;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.listsp #data>.sp>img {
+    max-width: 96%;
+    height: 220px;
+
+}
+
+.listsp #data>.sp>.gia {
+    font-size: 24px;
+    color: red;
+    margin: 15px 0;
+
+}
+
+.listsp #data>.sp .btnchon {
+    width: 90px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    background-color: darkcyan;
+    border: none;
+}
+
+.listsp #data>.sp .btnxem {
+    width: 90px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    border: none;
+    margin-left: 20px;
+}
+
+.listsp #data>.sp .btnxem>a {
+    text-decoration: none;
+}
+
+#doitac>h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#doitac #data {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 30px 20px;
+
+}
+
+#doitac #data img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid darkblue;
+    border-radius: 50%;
+}
+
+#chitietsp {
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 400px;
+    gap: 30px;
+}
+
+#chitietsp>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#chitietsp>div:nth-child(1) img {
+    width: 100%;
+}
+
+#chitietsp>div:nth-child(2)>h1 {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+#chitietsp div:nth-child(2)>div {
+    margin-top: 15px;
+    font-size: 1.3em;
+}
+
+#chitietsp>div:nth-child(2)>div>span {
+    display: inline-block;
+    width: 150px;
+}
+
+#chitietsp div:nth-child(2) #soluong {
+    width: 90px;
+    text-align: center;
+    padding: 5px;
+}
+
+#chitietsp div:nth-child(2) button {
+    width: 140px;
+    padding: 8px;
+    margin-left: 20px;
+}
+
+
+#splienquan>h4 {
+    font-size: 1.5em;
+    background-color: darkcyan;
+    padding: 10px;
+    color: white
+}
+
+#splienquan>#data {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
+}
+
+#splienquan>#data>.sp>img {
+    max-width: 100%;
+    height: auto;
+}
+
+#splienquan>#data>div {
+    text-align: center;
+    border: 1px solid darkcyan;
+    padding: 10px;
+}
+
+#splienquan>#data>div>h3 {
+    font-size: 1.2em;
+    height: 40px;
+}
+
+
+#sptrongloai h1 {
+    background-color: darkcyan;
+    padding: 10px;
+    color: cyan;
+    margin: 10px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#sptrongloai #data {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px
+}
+
+#sptrongloai>#data>div {
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+#sptrongloai>#data>div>h3 {
+    font-size: 1.5em;
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+#sptrongloai>#data>div>img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#sptrongloai>#data>div>#gia {
+    font-size: 1.4em;
+}
+
+#container>nav>ul {
+    margin: 0;
+    padding: 0;
+}
+
+#container>nav>ul>li {
+    margin: 5px;
+    min-width: 45px;
+    text-align: center;
+}
+
+#container>nav>ul>li::after {
+    content: '|';
+    font-size: 0.9em;
+}
+
+#container>nav>ul>li>a {
+    margin-right: 0px;
+    font-size: 1em;
+}
+
+#container>nav>ul>li>a:hover {
+    color: yellow
+}
+
+/* giỏ hàng */
+#tblgiohang {
+    width: 800px;
+    border: 1px solid darkcyan;
+    ;
+}
+
+#tblgiohang caption {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+#tblgiohang td {
+    vertical-align: middle;
+}
+
+#tblgiohang input {
+    background-color: lightcyan;
+}
+
+#tblgiohang a {
+    text-decoration: none;
+    color: darkblue
+}
+
+#tblgiohang a:hover {
+    color: darkorange
+}
+
+/* menu */
+#container>nav>ul {
+    margin: 0;
+    padding: 0;
+}
+
+#container>nav>ul>li {
+    margin: 5px;
+    min-width: 45px;
+    text-align: center;
+}
+
+#container>nav>ul>li::after {
+    content: '|';
+    font-size: 0.9em;
+}
+
+#container>nav>ul>li>a {
+    margin-right: 0px;
+    font-size: 1em;
+}
+
+#container>nav>ul>li>a:hover {
+    color: yellow
+}
+
+/* giỏ hàng */
+#tblgiohang {
+    width: 800px;
+    border: 1px solid darkcyan;
+    ;
+}
+
+#tblgiohang caption {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+#tblgiohang td {
+    vertical-align: middle;
+}
+
+#tblgiohang input {
+    background-color: lightcyan;
+}
+
+#tblgiohang a {
+    text-decoration: none;
+    color: darkblue
+}
+
+#tblgiohang a:hover {
+    color: darkorange
+}
+
+#userinfo {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
+#userinfo a {
+    text-decoration: none;
+    color: white
+}
+
+#userinfo a:hover {
+    color: yellow
+}
+
+.btnchon>a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    cursor: pointer;
+}
